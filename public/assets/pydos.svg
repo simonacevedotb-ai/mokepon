@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="cuerpoPydos" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5ff0e0"/>
+      <stop offset="1" stop-color="#1b6fa8"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="110" rx="30" ry="6" fill="#0b2540" opacity=".18"/>
+  <path d="M18 62 36 38 36 86z" fill="#3fc9d6"/>
+  <path d="M62 20q10 10 6 22-14-4-6-22z" fill="#2aa0c4"/>
+  <ellipse cx="66" cy="64" rx="37" ry="29" fill="url(#cuerpoPydos)"/>
+  <path d="M40 64q26-16 56-4-28 22-56 4z" fill="#bff6ff" opacity=".55"/>
+  <circle cx="84" cy="54" r="9" fill="#fff"/>
+  <circle cx="86" cy="55" r="4.5" fill="#0e2233"/>
+  <circle cx="84" cy="52" r="1.8" fill="#fff"/>
+  <path d="M96 72q6 4 0 8" stroke="#0e3b57" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M46 80q8 10 20 10" stroke="#9ef0ff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+  <circle cx="24" cy="26" r="5" fill="#8fe9ff" opacity=".9"/>
+  <circle cx="36" cy="16" r="3.5" fill="#8fe9ff" opacity=".7"/>
+</svg>

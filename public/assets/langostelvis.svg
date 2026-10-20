@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="cuerpoLangostelvis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7a5c"/>
+      <stop offset="1" stop-color="#c0231c"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="110" rx="32" ry="6" fill="#3a0505" opacity=".18"/>
+  <path d="M22 54q-12-8-6-20 10 0 12 10 8 2 6 12z" fill="#d93a2b"/>
+  <path d="M98 54q12-8 6-20-10 0-12 10-8 2-6 12z" fill="#d93a2b"/>
+  <ellipse cx="60" cy="66" rx="30" ry="36" fill="url(#cuerpoLangostelvis)"/>
+  <path d="M34 60h52M32 74h56M36 88h48" stroke="#8c1410" stroke-width="2.5" opacity=".5" stroke-linecap="round"/>
+  <path d="M40 32q6-16 20-14 14 2 18 12-12-8-20-2-8-6-18 4z" fill="#2b1a12"/>
+  <circle cx="48" cy="54" r="8" fill="#fff"/>
+  <circle cx="72" cy="54" r="8" fill="#fff"/>
+  <circle cx="49" cy="55" r="4" fill="#20100c"/>
+  <circle cx="73" cy="55" r="4" fill="#20100c"/>
+  <circle cx="47" cy="52" r="1.6" fill="#fff"/>
+  <circle cx="71" cy="52" r="1.6" fill="#fff"/>
+  <path d="M52 70q8 7 16 0" stroke="#5e0d09" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M60 96q-6 10-16 12m16-12q6 10 16 12" stroke="#c0231c" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M100 18l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#ffd23f"/>
+</svg>

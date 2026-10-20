@@ -1,0 +1,22 @@
+{
+  "name": "mokepon",
+  "version": "1.0.0",
+  "description": "Juego de batallas por turnos con mapa en canvas, hecho con HTML, CSS, JavaScript y Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "juego",
+    "javascript",
+    "canvas",
+    "express",
+    "mokepon"
+  ],
+  "author": "Simón",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mokepon</title>
+  <meta name="description" content="Juego de batallas por turnos con mapa en canvas, hecho con HTML, CSS y JavaScript.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header class="encabezado">
+    <h1 class="encabezado__titulo">Mokepon</h1>
+    <p class="encabezado__subtitulo">Elige tu mokepón, recorre el mapa y gana la batalla</p>
+  </header>
+
+  <main class="contenido">
+
+    <!-- 1. Selección de mascota -->
+    <section id="seleccionar-mascota" class="seccion">
+      <h2 class="seccion__titulo">¿Con quién vas a pelear?</h2>
+      <div id="tarjetas-mokepones" class="tarjetas"></div>
+      <button id="boton-mascota" class="boton boton--principal" disabled>Seleccionar mokepón</button>
+    </section>
+
+    <!-- 2. Mapa -->
+    <section id="ver-mapa" class="seccion oculto">
+      <p id="estado-conexion" class="estado">Buscando servidor…</p>
+      <canvas id="mapa" class="mapa" width="500" height="500"></canvas>
+      <p class="pista">Muévete con las flechas o WASD. Choca con un mokepón salvaje para pelear.</p>
+      <div class="dpad">
+        <button class="dpad__boton dpad__boton--arriba" data-direccion="arriba" aria-label="Arriba">▲</button>
+        <button class="dpad__boton dpad__boton--izquierda" data-direccion="izquierda" aria-label="Izquierda">◀</button>
+        <button class="dpad__boton dpad__boton--derecha" data-direccion="derecha" aria-label="Derecha">▶</button>
+        <button class="dpad__boton dpad__boton--abajo" data-direccion="abajo" aria-label="Abajo">▼</button>
+      </div>
+    </section>
+
+    <!-- 3. Combate -->
+    <section id="seleccionar-ataque" class="seccion oculto">
+      <div class="marcador">
+        <article class="marcador__lado">
+          <img id="foto-jugador" class="marcador__foto" src="" alt="">
+          <h3 id="nombre-jugador" class="marcador__nombre"></h3>
+          <p id="vidas-jugador" class="marcador__vidas"></p>
+        </article>
+        <span class="marcador__vs">VS</span>
+        <article class="marcador__lado">
+          <img id="foto-enemigo" class="marcador__foto" src="" alt="">
+          <h3 id="nombre-enemigo" class="marcador__nombre"></h3>
+          <p id="vidas-enemigo" class="marcador__vidas"></p>
+        </article>
+      </div>
+
+      <h2 class="seccion__titulo">Elige tus 5 ataques</h2>
+      <div id="botones-ataque" class="ataques"></div>
+      <p id="secuencia-jugador" class="secuencia"></p>
+      <ol id="bitacora" class="bitacora"></ol>
+    </section>
+
+    <!-- 4. Resultado -->
+    <section id="reiniciar" class="seccion oculto">
+      <h2 id="resultado" class="resultado"></h2>
+      <p id="resumen" class="estado"></p>
+      <button id="boton-reiniciar" class="boton boton--principal">Jugar otra vez</button>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto de práctica basado en el Curso de Programación Básica de Platzi. Código y sprites propios.</p>
+  </footer>
+
+  <script src="js/datos.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/juego.js"></script>
+</body>
+
+</html>
